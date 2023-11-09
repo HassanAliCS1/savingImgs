@@ -21,7 +21,6 @@ public class StorageService {
                 .name(file.getOriginalFilename())
                 .type(file.getContentType())
                 .imageData(ImageUtils.compressImage(file.getBytes())).build());
-
         if (imageData != null) {
             return "file uploaded successfully : " + file.getOriginalFilename();
         }
